@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            max-height: 50px;
+            margin-right: 20px;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .poster {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Ensure poster is not affected by theme changes */
+            transition: none;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2, h3, p {
+            transition: color 0.3s;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .venue {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .theme-switch {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        /* Dark Theme Styles */
+        body.dark-theme {
+            background-color: #333;
+            color: #f4f4f4;
+        }
+
+        .dark-theme .header {
+            background-color: #444;
+        }
+
+        .dark-theme .venue {
+            background-color: #555;
+        }
+
+        .dark-theme .theme-switch {
+            color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div style="display: flex; align-items: center;">
+            <img src="https://ik.imagekit.io/SrinivasanRavi/logo.jpeg?updatedAt=1723132897498" alt="Logo" class="logo">
+            <h3>Sri Krishna College Of Technology</h3>
+        </div>
+        <button class="theme-switch" onclick="toggleTheme()">Switch Theme</button>
+    </div>
+
+    <div class="container">
+        <h2>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</h2>
+        <hr>
+        <h3>Heartly Welcoming You all for!!!</h3>
+        <img src="https://ik.imagekit.io/SrinivasanRavi/Invitation.jpg?updatedAt=1723132766194" alt="Event Poster" class="poster">
+        <p>It is with immense pleasure that we invite you to the inauguration ceremony of our Department Association.</p>
+        
+        <div class="venue">
+            <h2>Event Details</h2>
+            <p><strong>Chief Guest:</strong> Dr. Saravana Kumar C. S.<br>
+                Senior Software Architect,<br>
+                Bosch Global Software Technologies,<br>
+                Global Tech Park, Kallapatti,<br>
+                Coimbatore
+            </p>
+            <p><strong>Date:</strong> September 15, 2024</p>
+            <p><strong>Time:</strong> 10:00 AM to 11:00 AM</p>
+            <p><strong>Venue:</strong> Venkatram Hall, Sri Krishna College Of Technology, Kovaipudur.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
+</body>
+</html>
